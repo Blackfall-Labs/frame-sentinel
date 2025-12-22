@@ -37,6 +37,7 @@ Track **6 independent trust dimensions**:
 [dependencies]
 sam-trust = "0.1.0"
 ```
+## Dependency Architecture**frame-sentinel depends on:**```frame-sentinel└── frame-catalog (database, embeddings)```**Used by:** frame-identity (trust integration)**Position in Frame ecosystem:**```frame-catalog    └→ frame-sentinel        └→ frame-identity```
 
 ```rust
 use sam_trust::{TrustScoreManager, TrustLevel};
