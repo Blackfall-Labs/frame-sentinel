@@ -3,7 +3,7 @@
 ## [0.1.0] - 2025-12-21
 
 ### Added
-- Initial release extracted from SAM project
+- Initial release extracted from Frame project
 - **Multi-Dimensional Trust System**: 6 orthogonal trust dimensions
   - Identity Trust (Voice, Typing, Face)
   - Location Consistency
@@ -43,11 +43,11 @@
 
 ### Dependencies
 - rusqlite 0.31 (trust score persistence)
-- sam-vector (Database trait for relationships)
+- frame-catalog (Database trait for relationships)
 - bincode 1.3 (baseline voice pattern serialization)
 - chrono 0.4 (timestamps)
 
 ### Notes
-- Extracted from [SAM (Societal Advisory Module)](https://github.com/Blackfall-Labs/sam)
+- Extracted from [Frame](https://github.com/Blackfall-Labs/sam)
 - Designed to prevent deepfake and impersonation attacks
 - Production-ready for identity verification systems

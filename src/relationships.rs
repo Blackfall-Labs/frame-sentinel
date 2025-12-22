@@ -4,7 +4,7 @@
 //! For example, if Magnus is SAM's creator and John is Magnus's brother,
 //! then SAM can infer that John is SAM's uncle.
 
-use sam_vector::database::{Database, DatabaseError};
+use frame_catalog::database::{Database, DatabaseError};
 
 pub type Result<T> = std::result::Result<T, DatabaseError>;
 use chrono::{DateTime, Utc};

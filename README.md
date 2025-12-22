@@ -1,8 +1,8 @@
-# SAM Trust - Multi-Dimensional Trust Scoring and Relationship Management
+# Frame Sentinel - Multi-Dimensional Trust Scoring and Relationship Management
 
 **CRITICAL:** Single scalar trust is dangerous and attackable. This crate provides orthogonal trust dimensions and policy-based access control.
 
-Extracted from the SAM (Societal Advisory Module) project.
+Extracted from the Frame project.
 
 ## Problem: Scalar Trust is Exploitable
 
@@ -131,7 +131,7 @@ let relationships = graph.get_all_relationships("sam", "john");
 ## Dependencies
 
 - `rusqlite` (0.31) - Trust score persistence
-- `sam-vector` - Database trait for relationship storage
+- `frame-catalog` - Database trait for relationship storage
 - `bincode` (1.3) - Baseline voice pattern serialization
 
 ## License

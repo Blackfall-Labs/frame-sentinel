@@ -1,10 +1,10 @@
 [package]
-name = "sam-trust"
+name = "frame-sentinel"
 version = "0.1.0"
 edition = "2021"
 authors = ["Magnus Trent <magnus@blackfall.dev>"]
 license = "MIT"
-repository = "https://github.com/Blackfall-Labs/sam-trust"
+repository = "https://github.com/Blackfall-Labs/frame-sentinel"
 description = "Multi-dimensional trust scoring and relationship management for AI systems"
 keywords = ["trust", "identity", "security", "relationship-graph", "ai"]
 categories = ["authentication", "cryptography", "algorithms"]
@@ -19,8 +19,8 @@ chrono = { version = "0.4", features = ["serde"] }
 rusqlite = { version = "0.31", features = ["bundled", "serde_json"] }
 uuid = { version = "1.0", features = ["v4", "serde"] }
 
-# sam-vector for Database trait (relationships module)
-sam-vector = { path = "../sam-vector" }
+# frame-catalog for Database trait (relationships module)
+frame-catalog = { path = "../frame-catalog" }
 
 # Serialization (for trust_scoring baseline voice data)
 bincode = "1.3"

@@ -1,4 +1,4 @@
-//! # SAM Trust - Multi-Dimensional Trust Scoring and Relationship Management
+//! # Frame Sentinel - Multi-Dimensional Trust Scoring and Relationship Management
 //!
 //! **CRITICAL:** Single scalar trust is dangerous and attackable. This crate provides
 //! orthogonal trust dimensions and policy-based access control.
