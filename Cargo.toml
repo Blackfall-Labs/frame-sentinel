@@ -1,0 +1,36 @@
+[package]
+name = "sam-trust"
+version = "0.1.0"
+edition = "2021"
+authors = ["Magnus Trent <magnus@blackfall.dev>"]
+license = "MIT"
+repository = "https://github.com/Blackfall-Labs/sam-trust"
+description = "Multi-dimensional trust scoring and relationship management for AI systems"
+keywords = ["trust", "identity", "security", "relationship-graph", "ai"]
+categories = ["authentication", "cryptography", "algorithms"]
+
+[dependencies]
+# Core
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+chrono = { version = "0.4", features = ["serde"] }
+
+# Database
+rusqlite = { version = "0.31", features = ["bundled", "serde_json"] }
+uuid = { version = "1.0", features = ["v4", "serde"] }
+
+# sam-vector for Database trait (relationships module)
+sam-vector = { path = "../sam-vector" }
+
+# Serialization (for trust_scoring baseline voice data)
+bincode = "1.3"
+
+# Error handling
+thiserror = "2.0"
+
+# Logging
+tracing = "0.1"
+
+[dev-dependencies]
+tokio = { version = "1.0", features = ["full"] }
+tempfile = "3.0"
