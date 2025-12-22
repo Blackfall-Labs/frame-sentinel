@@ -2,7 +2,7 @@
 
 **CRITICAL:** Single scalar trust is dangerous and attackable. This crate provides orthogonal trust dimensions and policy-based access control.
 
-Extracted from the Frame project.
+Extracted from the Frame microservices architecture.
 
 ## Problem: Scalar Trust is Exploitable
 
@@ -37,7 +37,25 @@ Track **6 independent trust dimensions**:
 [dependencies]
 sam-trust = "0.1.0"
 ```
-## Dependency Architecture**frame-sentinel depends on:**```frame-sentinel└── frame-catalog (database, embeddings)```**Used by:** frame-identity (trust integration)**Position in Frame ecosystem:**```frame-catalog    └→ frame-sentinel        └→ frame-identity```
+
+## Dependency Architecture
+
+**frame-sentinel depends on:**
+
+```
+frame-sentinel
+└── frame-catalog (database, embeddings)
+```
+
+**Used by:** frame-identity (trust integration)
+
+**Position in Frame ecosystem:**
+
+```
+frame-catalog
+    └→ frame-sentinel
+        └→ frame-identity
+```
 
 ```rust
 use sam_trust::{TrustScoreManager, TrustLevel};
@@ -145,5 +163,4 @@ Magnus Trent <magnus@blackfall.dev>
 
 ## Links
 
-- **GitHub:** https://github.com/Blackfall-Labs/sam-trust
-- **SAM Project:** https://github.com/Blackfall-Labs/sam
+- **GitHub:** https://github.com/Blackfall-Labs/frame-sentinel
