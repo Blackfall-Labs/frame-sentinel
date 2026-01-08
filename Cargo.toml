@@ -1,6 +1,6 @@
 [package]
 name = "frame-sentinel"
-version = "0.1.0"
+version = "0.2.0"
 edition = "2021"
 authors = ["Magnus Trent <magnus@blackfall.dev>"]
 license = "MIT"
@@ -16,11 +16,11 @@ serde_json = "1.0"
 chrono = { version = "0.4", features = ["serde"] }
 
 # Database
-rusqlite = { version = "0.31", features = ["bundled", "serde_json"] }
+rusqlite = { version = "0.32", features = ["bundled", "serde_json"] }
 uuid = { version = "1.0", features = ["v4", "serde"] }
 
 # frame-catalog for Database trait (relationships module)
-frame-catalog = { path = "../frame-catalog" }
+frame-catalog = "0.2"
 
 # Serialization (for trust_scoring baseline voice data)
 bincode = "1.3"
